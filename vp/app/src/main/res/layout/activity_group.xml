@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="32dp"
+            android:layout_height="28dp"
+            android:background="@drawable/back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分组任务"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:id="@+id/tv_add"
+            android:layout_width="35dp"
+            android:layout_height="28dp"
+            android:text="加入"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_1"
+        android:overScrollMode="never"/>
+
+</RelativeLayout>

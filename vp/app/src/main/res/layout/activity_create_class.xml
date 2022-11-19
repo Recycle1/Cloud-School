@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f0f0f0">
+
+    <include layout="@layout/top_layout"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/courseName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff"
+            android:layout_marginTop="10dp"
+            android:hint="课程名"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+
+
+        <EditText
+            android:id="@+id/courseInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="#ffffff"
+            android:layout_marginTop="10dp"
+            android:hint="课程简介"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+
+<!--        <EditText-->
+<!--            android:id="@+id/courseTime"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:background="#ffffff"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:hint="课时数"-->
+<!--            android:paddingLeft="20dp"-->
+<!--            android:inputType="number"/>-->
+
+        <Spinner
+            android:id="@+id/courseType"
+            android:entries="@array/ctype"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff"
+            android:layout_marginTop="10dp"
+            android:textColor="#e0e0e0"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" />
+
+        <Button
+            android:id="@+id/addPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff"
+            android:layout_marginTop="10dp"
+            android:text="上传封面"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+        <ImageView
+            android:id="@+id/image"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_next">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"/>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="hyh"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="25dp"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:background="@color/white"
+                android:layout_below="@+id/iv"/>
+
+            <TextView
+                android:id="@+id/teacher_title"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="授课教师"
+                android:paddingHorizontal="12dp"
+                android:background="@color/white"
+                android:textSize="17sp"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:layout_below="@+id/tv_name"/>
+            <TextView
+                android:id="@+id/tv_teacher"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tv_name"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@id/teacher_title"/>
+
+            <TextView
+                android:id="@+id/school_title"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="开设院校"
+                android:textSize="17sp"
+                android:paddingHorizontal="12dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:layout_below="@+id/tv_teacher"/>
+            <TextView
+                android:id="@+id/tv_school"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tv_teacher"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@id/school_title"
+                android:background="@color/white"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:layout_below="@id/tv_school">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="课程简介"
+                    android:textSize="17sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="12dp"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_introduce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_below="@+id/rl_1"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_introduce"
+                android:background="@color/white"
+                android:visibility="gone">
+                <Button
+                    android:id="@+id/btn_group"
+                    android:layout_width="175dp"
+                    android:layout_height="55dp"
+                    android:layout_centerVertical="true"
+                    android:text="发起分组任务"
+                    android:layout_marginLeft="15dp"
+                    android:paddingLeft="15dp"
+                    android:layout_marginVertical="20dp"
+                    android:textSize="16sp"
+                    android:gravity="left|center_vertical"
+                    android:foreground="?selectableItemBackground"
+                    android:background="@drawable/group_choice"
+                    android:visibility="gone"/>
+                <TextView
+                    android:id="@+id/tv_group_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textSize="17sp"
+                    android:paddingHorizontal="12dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:text="所属分组"
+                    android:textColor="@color/black"
+                    android:visibility="gone"/>
+                <TextView
+                    android:id="@+id/tv_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:layout_toRightOf="@+id/tv_group_title"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:layout_below="@id/rl_group">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="二维码分享"
+                    android:textSize="17sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="12dp"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_zxing"
+                android:layout_width="155dp"
+                android:layout_height="155dp"
+                android:layout_below="@+id/rl_2"
+                android:layout_marginVertical="25dp"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_next"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white">
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="240dp"
+                android:layout_height="42dp"
+                android:layout_centerInParent="true"
+                android:text="开 始 上 课"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#EEF2F4"
+                android:background="@drawable/round_btn"/>
+
+        </RelativeLayout>
+
+
+
+</RelativeLayout>

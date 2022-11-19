@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="155dp"
+    android:background="@color/white"
+    android:foreground="?selectableItemBackground">
+
+    <TextView
+        android:id="@+id/name_title"
+        android:layout_width="85dp"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:text="申请人："
+        android:textColor="#292727"
+        android:layout_marginLeft="15dp"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textColor="#292727"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/name_title"
+        android:layout_toLeftOf="@id/rl_1"/>
+
+    <TextView
+        android:id="@+id/tv_start_time"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/tv_name"/>
+
+    <TextView
+        android:id="@+id/tv_end_time"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/tv_start_time"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="15dp">
+        <Button
+            android:id="@+id/btn_yes"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:text="通过"
+            android:visibility="gone"
+            android:background="@drawable/color_blue"
+            />
+
+        <Button
+            android:id="@+id/btn_no"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:text="不通过"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/color_blue"
+            android:layout_below="@id/btn_yes"/>
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F3E6E6"
+        android:layout_alignParentBottom="true"/>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="school">
+        <item>燕山大学</item>
+        <item>清华大学</item>
+    </string-array>
+</resources>

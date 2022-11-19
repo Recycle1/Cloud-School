@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <io.vov.vitamio.widget.VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#30FFFFFF"
+        android:layout_above="@id/ll_et"
+        android:layout_marginHorizontal="15dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_et"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:layout_below="@id/videoView"
+        android:layout_alignParentBottom="true">
+
+
+        <EditText
+            android:id="@+id/et"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="55"
+            android:layout_marginLeft="12dp"
+            android:background="#F6F4F4"/>
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="55dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="发送"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:background="@drawable/round_btn"/>
+    </LinearLayout>
+
+</RelativeLayout>

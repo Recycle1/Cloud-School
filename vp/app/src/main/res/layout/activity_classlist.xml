@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/color_blue">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="17dp"
+            android:background="@drawable/round">
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/search"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="11dp"/>
+
+            <EditText
+                android:id="@+id/et"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv"
+                android:layout_marginLeft="5dp"
+                android:maxLines="1"
+                android:background="@null"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl1"
+        android:background="@color/white">
+        <LinearLayout
+            android:id="@+id/ll_1"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:background="#F6F5F5"
+            android:paddingTop="9dp">
+            <TextView
+                android:id="@+id/tv_english"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="#7A7676"
+                android:text="外语"/>
+            <TextView
+                android:id="@+id/tv_economic"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="#7A7676"
+                android:text="经济管理"/>
+            <TextView
+                android:id="@+id/tv_computer"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="#7A7676"
+                android:text="计算机"/>
+            <TextView
+                android:id="@+id/tv_math"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="#7A7676"
+                android:text="大学数学"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_2"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_below="@id/ll_1"
+            android:background="#F6F5F5"
+            android:paddingBottom="5dp">
+            <TextView
+                android:id="@+id/tv_medicine"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="#7A7676"
+                android:text="医疗健康"/>
+            <TextView
+                android:id="@+id/tv_chemistry"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="#7A7676"
+                android:text="化学工程"/>
+            <TextView
+                android:id="@+id/tv_music"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:textSize="15sp"
+                android:textColor="#7A7676"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="音乐与艺术"/>
+            <TextView
+                android:id="@+id/tv_machinery"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:textSize="15sp"
+                android:textColor="#7A7676"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="大学工科"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ll_2"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

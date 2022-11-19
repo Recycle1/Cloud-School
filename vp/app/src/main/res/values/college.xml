@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="college">
+        <item>经济管理学院</item>
+        <item>信息工程学院</item>
+        <item>电气工程学院</item>
+        <item>机械工程学院</item>
+        <item>环境与化学工程学院</item>
+        <item>艺术与设计学院</item>
+    </string-array>
+</resources>

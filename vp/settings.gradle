@@ -1,0 +1,5 @@
+rootProject.name = "vp"
+include ':app'
+include ':library'
+include ':vitamio'
+include ':zxing-lib'

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ctype">
+        <item>外语</item>
+        <item>经济管理</item>
+        <item>计算机</item>
+        <item>大学数学</item>
+        <item>医疗健康</item>
+        <item>化学工程</item>
+        <item>音乐与艺术</item>
+        <item>大学工科</item>
+    </string-array>
+</resources>

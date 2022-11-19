@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="type_labels">
+        <item>离市（本科生）</item>
+        <item>不离市（本科生）</item>
+        <item>离市（研究生）</item>
+        <item>不离市（研究生）</item>
+    </string-array>
+</resources>

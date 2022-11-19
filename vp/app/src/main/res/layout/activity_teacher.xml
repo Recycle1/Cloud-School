@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fun"/>
+
+    <LinearLayout
+        android:id="@+id/fun"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:id="@+id/rl_class"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/img_class"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/class2" />
+            <TextView
+                android:id="@+id/tv_class"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_below="@+id/img_class"
+                android:layout_centerHorizontal="true"
+                android:textColor="#30B6EC"
+                android:textSize="13sp"
+                android:text="课程"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_person"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical">
+            <ImageView
+                android:id="@+id/img_person"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/person1"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/tv_person"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_below="@+id/img_person"
+                android:layout_centerHorizontal="true"
+                android:textColor="#414343"
+                android:textSize="13sp"
+                android:text="我的"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -100,10 +100,10 @@ public class RegisterActivity extends AppCompatActivity {
                 if(password_str.length()==0||user_name_str.length()==0||grade_str.length()==0||school_id_str.length()==0){
                     handler.sendEmptyMessage(1);
                 }
-                else if(isInteger(grade_str)){
+                else if(!isInteger(grade_str)){
                     handler.sendEmptyMessage(4);
                 }
-                else if(isInteger(school_id_str)){
+                else if(!isInteger(school_id_str)){
                     handler.sendEmptyMessage(5);
                 }
                 else{
